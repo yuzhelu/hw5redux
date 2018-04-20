@@ -52,10 +52,10 @@ export function fetchMovies(){
     }
 }
 
-export function fetchMovie(movieTitle){
+export function fetchMovie(movieId){
     const env = runtimeEnv();
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/${movieTitle}?reviews=true`, {
+        return fetch(`${env.REACT_APP_API_URL}/${movieId}?reviews=true`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
