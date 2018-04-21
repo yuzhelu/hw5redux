@@ -46,13 +46,17 @@ class Movie extends Component {
                         <ListGroupItem><ActorInfo actors={currentMovie.actors} /></ListGroupItem>
                         <ListGroupItem><h4><Glyphicon glyph={'star'} /> {currentMovie.avgRating} </h4></ListGroupItem>
                     </ListGroup>
-                    <Panel.Body><ReviewInfo reviews={currentMovie.reviews} /></Panel.Body>
+                    <Panel.Body><ReviewInfo reviews={currentMovie.review} /></Panel.Body>
                 </Panel>
             );
         };
         return (
             <DetailInfo currentMovie={this.props.selectedMovie} />
         );
+
+
+
+
     }
 }
 
