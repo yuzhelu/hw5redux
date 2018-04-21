@@ -24,7 +24,7 @@ class Movie extends Component {
             );
         };
 
-        const ReviewInfo = ({reviews=[]}) => {
+        const ReviewInfo = ({review=[]}) => {
             return review.map((review, i) =>
                 <p key={i}>
                 <b>{review.username}</b> {review.quote}
